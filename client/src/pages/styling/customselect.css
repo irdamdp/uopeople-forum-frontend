@@ -1,0 +1,88 @@
+/* .customselect__control {
+  background-color: white !important;
+  padding: 0px 5px 0px 5px !important;
+  height: 10px !important;
+  min-height: 25px !important;
+  border: 1.2px solid rgb(149, 149, 149) !important;
+  border-radius: 5px !important;
+  font-size: 15px !important;
+  cursor: pointer !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  margin: 0px 0px 3px 0px !important;
+  outline: none !important;
+}
+
+.customselect__single-value {
+  font-size: 12.5px !important;
+  line-height: 1 !important;
+}
+
+#react-select-3-input.customselect__input {
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+#react-select-3-listbox.customselect__menu-list {
+  padding: 0px !important;
+  height: 120px !important;
+  border-radius: 8px !important;
+  font-size: 11px !important;
+}
+
+.customselect__indicators {
+  display: none !important;
+  cursor: pointer;
+}
+
+.customselect__value-container {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  height: 10px !important;
+  min-height: 25px !important;
+  font-size: 15px !important;
+}
+
+.css-1dimb5e-singleValue {
+  margin-left: 8px !important;
+}
+.css-1jqq78o-placeholder {
+  margin-left: 7px !important;
+  font-size: 12px !important;
+}
+
+.customselect__option {
+  margin: 0px 0px 2px !important;
+
+  cursor: pointer !important;
+}
+
+.customselect__option--is-focused {
+  background-color: #e6f7ff;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+.customselect__menu {
+  border-radius: 8px;
+  margin-top: 0px !important;
+  padding: 5px 3px !important;
+}
+.customselect__option--is-selected {
+  border-radius: 5px;
+  background-color: #0b7ae2 !important;
+}
+.customselect__control:focus,
+.customselect__control--is-focused {
+  box-shadow: none !important;
+  outline: none !important;
+} */

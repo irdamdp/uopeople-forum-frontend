@@ -1,0 +1,182 @@
+.questionLayout {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.questionrules {
+  padding: 10px;
+}
+
+.questionrules h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "PT Sans";
+  font-weight: lighter;
+}
+
+.questionrules p {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  font-family: "PT Sans";
+  line-height: 1.5;
+  color: rgb(55, 55, 55);
+}
+
+.iconni {
+  color: #275c91;
+  font-size: 18px;
+}
+.questionIconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+.breadcrumbs {
+  display: flex;
+  gap: 2px;
+  padding: 10px 55px 0px;
+}
+
+.breadcrumbs a {
+  color: #4b345d;
+  text-decoration: none;
+  font-weight: 530;
+  font-size: 11.5px;
+  cursor: pointer;
+}
+.postquestion {
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.questformcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.questionform {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  outline: none !important;
+}
+.err {
+  font-size: 13px;
+  color: red;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.questionform input {
+  padding: 0.3rem 0.7rem;
+  border: 1.2px solid rgb(149, 149, 149);
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: "PT Sans";
+  width: 100%;
+  height: auto;
+
+  outline: none;
+}
+
+.questionformmsg {
+  vertical-align: top;
+  box-sizing: border-box;
+  outline: none;
+  border: 1.2px solid rgb(149, 149, 149);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: lighter !important;
+  width: 100%;
+  height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  resize: none;
+
+  outline: none;
+}
+
+.questionPostbtn {
+  background-color: #1881eb;
+  color: white;
+  border: none;
+  padding: 0.4rem 0px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  transition: background 0.3s ease;
+  width: 120px;
+}
+
+@media (max-width: 400px) {
+  .questionLayout {
+    width: 95%;
+  }
+  .questionform input {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  .questionformmsg {
+    height: 90px;
+    font-size: 0.8rem;
+  }
+  .questionPostbtn {
+    padding: 0.3rem 0px;
+    font-size: 12px;
+    width: 100px;
+  }
+  .postquestion {
+    font-size: 18px;
+  }
+  .questionrules h1 {
+    font-size: 1.3rem !important;
+  }
+  .questionrules p {
+    font-size: 0.7rem !important;
+  }
+  .questionrules {
+    padding: 0px;
+  }
+  .questionrules h1 {
+    padding-left: 5px;
+  }
+  .err {
+    font-size: 11px;
+  }
+  .breadcrumbs {
+    display: flex;
+    gap: 2px;
+    padding: 12px 20px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  .questionrules h1 {
+    font-size: 1.7rem !important;
+  }
+  .questionrules {
+    padding: 0px;
+  }
+
+  .questionLayout {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .breadcrumbs {
+    display: flex;
+    gap: 2px;
+    padding: 12px 30px;
+  }
+}
