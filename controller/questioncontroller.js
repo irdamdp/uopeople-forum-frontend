@@ -33,6 +33,7 @@ async function bringquest(req, res) {
     const [questions] = await dbconnection.query(
       "SELECT id, userid, title, description, questionid FROM questions ORDER BY id DESC"
     );
+
     res.status(StatusCodes.OK).json(questions);
   } catch (error) {
     console.log(error.message);
@@ -47,7 +48,7 @@ async function getquest(req, res) {
 
   try {
     const [questions] = await dbconnection.query(
-      "SELECT id, userid, title, description, questionid FROM questions WHERE questionid = ?",
+      "SELECT id, userid, title, tag, description, questionid FROM questions WHERE questionid = ?",
       [questionid]
     );
     res.status(StatusCodes.OK).json(questions[0]);
