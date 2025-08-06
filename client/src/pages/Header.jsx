@@ -24,8 +24,8 @@ function Header() {
             </span>
           </div>
           <nav className={classes.nav_links}>
-            <a href="#">Home</a>
-            <a href="#">How it Works</a>
+            <span>Home</span>
+            <span to="">How it Works</span>
             {!token ? (
               <Link to="/login">
                 <button className={classes.signin_btn}>SIGN IN</button>

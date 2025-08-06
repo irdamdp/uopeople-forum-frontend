@@ -32,7 +32,6 @@ function Registers() {
     userName: "",
     password: "",
   });
-
   const validateName = (name) => {
     return /^[A-Za-z]{3,}$/.test(name);
   };

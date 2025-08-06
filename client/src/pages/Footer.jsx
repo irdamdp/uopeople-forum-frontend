@@ -4,6 +4,7 @@ import instagram from "../assets/instagram.png";
 import facebook from "../assets/facebook.png";
 import logo from "../assets/logo-uop.png";
 import linkedin from "../assets/linkedin.png";
+
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -67,7 +68,7 @@ function Footer() {
               <li>
                 <Link
                   to="https://www.uopeople.edu"
-                  https:target="_blank" //web.facebook.com/UoPeople?_rdc=1&_rdr#
+                  https:target="_blank"
                   rel="noopener noreferrer"
                 >
                   University of People

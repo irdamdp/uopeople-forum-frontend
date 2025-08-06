@@ -1,5 +1,8 @@
 import classes from "./styling/terms.module.css";
-import { useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import github from "../assets/github.png";
+import linkedinn from "../assets/linkedinn.png";
+import gmail from "../assets/communication.png";
 function Terms() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -168,14 +171,44 @@ function Terms() {
           <h3>13. Contact Information</h3>
           <p>
             If you have questions, feedback, or concerns regarding these Terms
-            and Conditions, you may contact the developer at:
+            and Conditions, you may contact the developer at:{" "}
           </p>
-          <p>
+          <p className={classes.contact_info}>
+            <Link
+              to="https://www.linkedin.com/in/abreham-semu-fullstack-developer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.contact_infoo}
+            >
+              <img src={linkedinn} alt="" />
+            </Link>
             <strong style={{ color: "#045edcff" }}>
+              {" "}
+              let's connect on linkedin
+            </strong>
+            <br />
+            <Link
+              to="mailto:contactdeveloperab@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.contact_info}
+            >
+              <img src={gmail} alt="" />
+            </Link>
+            <strong>
+              {" "}
               contactdeveloperab@gmail.com
               <br />
-              [Optional GitHub or LinkedIn]
             </strong>
+            <Link
+              to="https://github.com/irdamdp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.contact_info}
+              style={{ color: "#000000ff" }}
+            >
+              <img src={github} alt="" /> github profile
+            </Link>
           </p>
         </div>
       </div>

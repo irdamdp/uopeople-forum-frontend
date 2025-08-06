@@ -13,6 +13,10 @@ function Question() {
   const [err, seterr] = useState("");
 
   const tagOptions = [
+    {
+      value: "Students Personal Experience in class and outside the class",
+      label: "Personal Experience",
+    },
     { value: "Math 1201 College algebra", label: "Math 1201 College algebra" },
     { value: "Programming Fundamental", label: "Programming Fundamental" },
     { value: "Business Administration", label: "Business Administration" },
@@ -93,90 +97,90 @@ function Question() {
     { value: "BUS 1103- Microeconomics", label: "BUS 1103- Microeconomics" },
     { value: "Macroeconomics", label: "Macroeconomics" },
   ];
-  const customStyles = {
-    control: (base, state) => ({
-      ...base,
-      backgroundColor: "white",
-      border: "1.2px solid rgb(149, 149, 149)",
-      borderRadius: "5px",
-      padding: "0px 5px",
-      height: "25px",
-      minHeight: "25px",
-      fontSize: "14px",
-      boxShadow: "none",
-      marginBottom: "3px",
-      cursor: "pointer",
-      outline: "none",
-      "&:hover": {
-        borderColor: "rgb(120,120,120)",
-      },
-    }),
+  // const customStyles = {
+  //   control: (base, state) => ({
+  //     ...base,
+  //     backgroundColor: "white",
+  //     border: "1.2px solid rgb(149, 149, 149)",
+  //     borderRadius: "5px",
+  //     padding: "0px 5px",
+  //     height: "25px",
+  //     minHeight: "25px",
+  //     fontSize: "14px",
+  //     boxShadow: "none",
+  //     marginBottom: "3px",
+  //     cursor: "pointer",
+  //     outline: "none",
+  //     "&:hover": {
+  //       borderColor: "rgb(120,120,120)",
+  //     },
+  //   }),
 
-    placeholder: (base) => ({
-      ...base,
-      fontSize: "12px",
-      marginLeft: "7px",
-      marginBottom: "5px",
-      overflow: "hidden",
-      gridArea: "auto",
-    }),
+  //   placeholder: (base) => ({
+  //     ...base,
+  //     fontSize: "12px",
+  //     marginLeft: "7px",
+  //     marginBottom: "5px",
+  //     overflow: "hidden",
+  //     gridArea: "auto",
+  //   }),
 
-    singleValue: (base) => ({
-      ...base,
-      fontSize: "13px",
-      marginLeft: "8px",
-      lineHeight: "1",
-    }),
+  //   singleValue: (base) => ({
+  //     ...base,
+  //     fontSize: "13px",
+  //     marginLeft: "8px",
+  //     lineHeight: "1",
+  //   }),
 
-    valueContainer: (base) => ({
-      ...base,
-      padding: "0",
-      height: "25px",
-      alignItems: "center",
-    }),
+  //   valueContainer: (base) => ({
+  //     ...base,
+  //     padding: "0",
+  //     height: "25px",
+  //     alignItems: "center",
+  //   }),
 
-    input: (base) => ({
-      ...base,
-      margin: 0,
-      padding: 0,
-      height: 0,
-      opacity: 0,
-      pointerEvents: "none",
-    }),
+  //   input: (base) => ({
+  //     ...base,
+  //     margin: 0,
+  //     padding: 0,
+  //     height: 0,
+  //     opacity: 0,
+  //     pointerEvents: "none",
+  //   }),
 
-    indicatorsContainer: () => ({
-      display: "none",
-    }),
+  //   indicatorsContainer: () => ({
+  //     display: "none",
+  //   }),
 
-    menu: (base) => ({
-      ...base,
-      borderRadius: "8px",
-      padding: "3px",
-      marginTop: "0px",
-      fontSize: "12px",
-    }),
+  //   menu: (base) => ({
+  //     ...base,
+  //     borderRadius: "8px",
+  //     padding: "3px",
+  //     marginTop: "0px",
+  //     fontSize: "12px",
+  //   }),
 
-    menuList: (base) => ({
-      ...base,
-      padding: "0px",
-      maxHeight: "120px",
-    }),
+  //   menuList: (base) => ({
+  //     ...base,
+  //     padding: "0px",
+  //     maxHeight: "120px",
+  //   }),
 
-    option: (base, state) => ({
-      ...base,
-      fontSize: "12px",
-      padding: "6px 8px",
-      margin: "2px 0",
-      backgroundColor: state.isSelected
-        ? "#0b7ae2"
-        : state.isFocused
-        ? "#e6f7ff"
-        : "transparent",
-      borderRadius: "5px",
-      color: state.isSelected ? "white" : "black",
-      cursor: "pointer",
-    }),
-  };
+  //   option: (base, state) => ({
+  //     ...base,
+  //     fontSize: "12px",
+  //     padding: "6px 8px",
+  //     margin: "2px 0",
+  //     backgroundColor: state.isSelected
+  //       ? "#0b7ae2"
+  //       : state.isFocused
+  //       ? "#e6f7ff"
+  //       : "transparent",
+  //     borderRadius: "5px",
+  //     color: state.isSelected ? "white" : "black",
+  //     cursor: "pointer",
+  //   }),
+  // };
 
   const [questpost, setquestpost] = useState({
     title: "",
@@ -296,7 +300,7 @@ function Question() {
               onChange={(selectedOption) =>
                 setquestpost({ ...questpost, tag: selectedOption?.value || "" })
               }
-              styles={customStyles}
+              // styles={customStyles}
               classNamePrefix="customselect"
               required
             />

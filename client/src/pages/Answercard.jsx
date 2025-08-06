@@ -17,8 +17,8 @@ function Answercard() {
   const [usernames, setUsernames] = useState({});
   const [allanswer, setallanswer] = useState([]);
   const [err, seterr] = useState("");
-  //   console.log(questionid);
-  console.log(allanswer);
+  // console.log(question);
+  // console.log(allanswer);
 
   const navigate = useNavigate();
   useEffect(() => {
@@ -74,6 +74,7 @@ function Answercard() {
         console.log(err);
       });
   }, [questionid]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setanswerpost({
@@ -134,7 +135,9 @@ function Answercard() {
           <Link to={`/question/${questionid}`}>Answers</Link>
         </div>
         <div classsName={classes.questiontop}>
-          <h2>QUESTION</h2>
+          <h2>
+            QUESTION <span>on {question?.tag}</span>
+          </h2>
           <div className={classes.questionIconwrapper}>
             {" "}
             <span className={`material-symbols-outlined ${classes.iconni}`}>

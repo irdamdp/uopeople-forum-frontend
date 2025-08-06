@@ -11,6 +11,12 @@
   font-weight: lighter;
   color: #2b4367;
 }
+.questionwrap h2 span {
+  color: #a35608;
+  font-size: 20px;
+  font-weight: normal;
+  text-decoration: underline #a35608;
+}
 .questionwrap p {
   padding: 15px 50px !important;
 }
@@ -125,6 +131,10 @@
   p:hover {
     text-decoration: none;
     cursor: auto;
+    font-family: sans-serif;
+  }
+  p {
+    color: #901b54 !important;
   }
 }
 
@@ -160,5 +170,13 @@
   }
   .answerList {
     max-height: 200px;
+  }
+  .questionwrap h2 span {
+    font-size: 17px;
+  }
+}
+@media (max-width: 400px) {
+  .questionwrap h2 span {
+    font-size: 13px;
   }
 }
