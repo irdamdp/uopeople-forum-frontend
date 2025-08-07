@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const axiosbase = axios.create({
-  baseURL: "http://localhost:5500/api",
+  baseURL: import.meta.env.VITE_API_URL, // Use the environment variable for the base URL for deployment purpose
+  // baseURL: "http://localhost:5500/api", this one for localhost
 });
 
 export default axiosbase;
